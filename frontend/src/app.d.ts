@@ -16,6 +16,14 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	// Define environment variables
+	namespace NodeJS {
+		interface ProcessEnv {
+			PUBLIC_SUPABASE_URL: string;
+			PUBLIC_SUPABASE_ANON_KEY: string;
+		}
+	}
 }
 
 export {};
